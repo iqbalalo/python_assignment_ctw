@@ -13,10 +13,10 @@ The goal of this take-home assignment is to create API for financial data based 
 There are two endpoints -
 
     api/financial_data/ 
-*Optional query params start_date, end_date, symbol*
+*Optional query params: start_date, end_date, symbol*
 
     api/statistics/
-*Required query params start_date, end_date, symbol*
+*Required query params: start_date, end_date, symbol*
 
 
 ### How to setup and run
@@ -108,16 +108,17 @@ python_assignment_ctw/
 ├── README.md
 ├── requirements.txt
 ├── .env (Uploaded to git just for assignment)
-├── financial (project app main and settings)
-	├── settings.py
-	├── ... (other necessary files)
-├── api (API service codes)
-	├── migrations
-		├── 0001_initial.py (migration file)
-	├── management/commands/
-		├── get_raw_data.py
-	├── models.py
-	├── views.py
+├── financial
+	├── financial (project app main and settings)
+		├── settings.py
+		├── ... (other necessary files)
+	├── api (API service codes)
+		├── migrations
+			├── 0001_initial.py (migration file)
+		├── management/commands/
+			├── get_raw_data.py
+		├── models.py
+		├── views.py
 
 ```
 
